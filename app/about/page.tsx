@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { Download, ExternalLink, Github, Linkedin, Mail } from "lucide-react";
 
 const AboutPage = () => {

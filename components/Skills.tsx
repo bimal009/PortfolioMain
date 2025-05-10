@@ -12,7 +12,6 @@ import {
     Boxes,
     Code,
     TabletSmartphone,
-    Brain
 } from "lucide-react";
 
 /**
@@ -20,7 +19,7 @@ import {
  */
 interface TechItem {
     name: string;
-    icon: JSX.Element;
+    icon: React.ReactNode;
     description: string;
 }
 
@@ -157,7 +156,7 @@ const Skills: FC = () => {
                         <div
                             key={tech.name}
                             className="backdrop-blur-sm rounded-xl p-2 flex flex-col items-center 
-                                      transition-colors duration-300 border border-transparent
+                                     border border-transparent
                                      hover:translate-y-[-5px] hover:scale-105 transition-transform duration-300 group"
                             itemProp="itemListElement"
                             itemScope

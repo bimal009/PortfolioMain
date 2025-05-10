@@ -1,5 +1,4 @@
 import Hero from "@/components/Hero";
-import Navbar from "@/components/Navbar";
 // import WorkExperience from "@/components/Experience";
 import FeaturedProjects from "@/components/ProjectShowcase";
 import Contact from "@/components/Contact";

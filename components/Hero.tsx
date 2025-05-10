@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 import { Github, Instagram, Twitter, Linkedin, Mail } from "lucide-react";
 import Link from "next/link";
 import Head from "next/head";
@@ -85,22 +84,8 @@ const Hero = () => {
                                 >
                                     <Instagram size={20} />
                                 </Link>
-                                <Link
-                                    href="https://linkedin.com/in/bimalpandey"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    aria-label="LinkedIn Profile"
-                                    className="text-gray-400 hover:text-white transition-colors transform hover:scale-110 duration-300"
-                                >
-                                    <Linkedin size={20} />
-                                </Link>
-                                <Link
-                                    href="mailto:contact@bimalpandey.com"
-                                    aria-label="Email Contact"
-                                    className="text-gray-400 hover:text-white transition-colors transform hover:scale-110 duration-300"
-                                >
-                                    <Mail size={20} />
-                                </Link>
+
+
                             </div>
                         </div>
                     </div>

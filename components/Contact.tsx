@@ -1,8 +1,9 @@
 "use client"
 import React from "react";
 import { useForm } from "react-hook-form";
-import { Mail, Phone, Github, Send } from "lucide-react";
+import { Mail, Phone, Github, Send, Instagram, Twitter } from "lucide-react";
 import emailjs from '@emailjs/browser';
+import Link from "next/link";
 
 type FormValues = {
     name: string;
@@ -53,22 +54,24 @@ const Contact: React.FC = () => {
                 <div className=" border border-white/5 shadow-lg rounded-lg overflow-hidden hover:border-purple-500/30 transition-all duration-300">
                     {/* Contact info */}
                     <div className="p-6 border-b border-white/10 flex flex-col items-center justify-between">
-                        <div className="grid grid-cols-4 gap-3 text-sm text-center">
+                        <div className="grid grid-cols-3 gap-3 text-sm text-center">
                             <div className="flex items-center">
-                                <Mail size={20} className="mr-2 text-purple-400" />
+                                <Link target="_blank" href="https://instagram.com/bunchoo_graphics11">
+                                    <Instagram size={20} className="mr-2 text-purple-400" />
+                                </Link>
+
+                            </div>
+
+                            <div className="flex items-center">
+                                <Link target="_blank" href="https://x.com/CodeWithBun">
+                                    <Twitter size={20} className="mr-2 text-purple-400" />
+                                </Link>
 
                             </div>
                             <div className="flex items-center">
-                                <Phone size={20} className="mr-2 text-purple-400" />
-
-                            </div>
-                            <div className="flex items-center">
-                                <Github size={20} className="mr-2 text-purple-400" />
-
-                            </div>
-                            <div className="flex items-center">
-                                <Github size={20} className="mr-2 text-purple-400" />
-
+                                <Link target="_blank" href="https://github.com/bimal009">
+                                    <Github size={20} className="mr-2 text-purple-400" />
+                                </Link>
                             </div>
                         </div>
                     </div>
