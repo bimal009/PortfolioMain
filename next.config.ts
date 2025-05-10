@@ -8,12 +8,14 @@ const nextConfig = {
     minimumCacheTTL: 60,
   },
   reactStrictMode: true,
-  swcMinify: true,
   compress: true,
   poweredByHeader: false,
   experimental: {
     optimizeCss: true,
   },
+  output: 'export',
+  basePath: process.env.NODE_ENV === 'production' ? '/port' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/port/' : '',
 };
 
 module.exports = nextConfig;
