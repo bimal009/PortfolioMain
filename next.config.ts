@@ -15,8 +15,8 @@ const nextConfig = {
   experimental: {
     optimizeCss: true,
   },
-  trailingSlash: true,
-  assetPrefix: 'https://bimalpandey11.com.np',
+  basePath: process.env.NODE_ENV === 'production' ? '/PortfolioMain' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/PortfolioMain/' : '',
 };
 
 module.exports = nextConfig;
