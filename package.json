@@ -2,13 +2,11 @@
   "name": "port",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bimalpandey11.com.np",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "export": "next build"
+    "lint": "next lint"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",

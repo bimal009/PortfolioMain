@@ -1,7 +1,4 @@
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   output: 'export',
   images: {
     unoptimized: true,
@@ -15,8 +12,6 @@ const nextConfig = {
   experimental: {
     optimizeCss: true,
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/PortfolioMain' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/PortfolioMain/' : '',
 };
 
 module.exports = nextConfig;
