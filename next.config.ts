@@ -15,6 +15,8 @@ const nextConfig = {
   experimental: {
     optimizeCss: true,
   },
+  trailingSlash: true,
+  assetPrefix: 'https://bimalpandey11.com.np',
 };
 
 module.exports = nextConfig;
