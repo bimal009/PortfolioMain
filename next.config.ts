@@ -14,8 +14,6 @@ const nextConfig = {
     optimizeCss: true,
   },
   output: 'export',
-  basePath: process.env.NODE_ENV === 'production' ? '/port' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/port/' : '',
 };
 
 module.exports = nextConfig;
