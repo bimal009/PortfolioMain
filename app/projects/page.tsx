@@ -64,7 +64,7 @@ const ProjectsPage = () => {
             id: 4,
             title: "Portfolio Website",
             category: "personal",
-            image: "/port.png",
+            image: "/portfolio.png",
             description: "A personal portfolio showcasing my skills, projects, and experience as a full stack developer.",
             technologies: ["Next.js", "Tailwind CSS", "React", "Shadcn/ui"],
             features: [
