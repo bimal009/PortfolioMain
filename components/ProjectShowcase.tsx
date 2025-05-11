@@ -109,7 +109,7 @@ const FeaturedProjects = () => {
             title: "NextGen Club Admin & Public Portal",
             slug: "nextgen-club-admin-portal",
             description: "A fully responsive and scalable web app built for the NextGen Innovator Club to streamline operations and boost student engagement. It features a secure admin panel built with Node.js and Express, allowing admin users to manage events, members, and club resources efficiently.",
-            imageSrc: "/project1.png", // Add your project image here
+            imageSrc: "/nextgen.png", // Add your project image here
             technologies: [
                 "Next.js",
                 "Tailwind CSS",
