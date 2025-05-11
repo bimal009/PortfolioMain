@@ -84,7 +84,7 @@ const Project = ({
             {/* Image with optimized loading */}
             <div className="w-full md:w-1/2 mt-6 md:mt-0">
                 <Link href={liveUrl || ''} aria-label={`View details of ${title} project`}>
-                    <div className="project-card p-3 md:p-4 overflow-hidden rounded-lg border border-white/10 hover:border-purple-500/40 transition-all duration-300 shadow-xl bg-gray-900/50">
+                    <div className="project-card p-3 md:p-4 overflow-hidden rounded-lg border border-white/10 hover:border-purple-500/40 transition-all duration-300 shadow-xl ">
                         <div className="relative w-full aspect-video overflow-hidden rounded-md">
                             <Image
                                 src={imageSrc}
