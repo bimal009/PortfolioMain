@@ -109,12 +109,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" dir="ltr">
-      <body className={`${inter.variable} font-sans bg-dark text-white antialiased`}>
+      <body className={`${inter.variable} font-sans  text-white antialiased`}>
         <Navbar />
         <main className="min-h-screen">{children}</main>
-        <footer className="text-center text-sm py-4 text-gray-400">
-          © {new Date().getFullYear()} Bimal Pandey. All rights reserved.
-        </footer>
+
 
         {/* Structured data for better search engine understanding */}
         <Script id="schema-person" type="application/ld+json" strategy="afterInteractive">

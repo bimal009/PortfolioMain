@@ -130,34 +130,34 @@ const Skills: FC = () => {
     return (
         <section
             id="skills-section"
-            className="py-24 px-4 sm:px-8 md:px-12 lg:px-16"
+            className="py-16 md:py-24 px-4 sm:px-6 md:px-8 lg:px-12 overflow-hidden"
             aria-labelledby="skills-heading"
             itemScope
             itemType="https://schema.org/ItemList"
         >
             <div className="max-w-4xl mx-auto">
-                <div className="text-center mb-12">
+                <div className="text-center mb-8 md:mb-12">
                     <h2
                         id="skills-heading"
-                        className="text-3xl font-bold mb-4 text-white"
+                        className="text-2xl md:text-3xl font-bold mb-3 md:mb-4 text-white"
                         itemProp="name"
                     >
                         Technical Skills
                     </h2>
-                    <p className="text-gray-300 max-w-2xl mx-auto" itemProp="description">
+                    <p className="text-gray-300 max-w-2xl mx-auto text-sm md:text-base" itemProp="description">
                         My technical toolkit includes modern web technologies for building efficient,
                         scalable, and user-friendly applications.
                     </p>
                 </div>
 
-                {/* All skills in a centered, balanced grid */}
-                <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-3 justify-center">
+                {/* Improved grid for small screens */}
+                <div className="grid grid-cols-3 xs:grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 md:gap-3 justify-center">
                     {sortedTechStack.map((tech, index) => (
                         <div
                             key={tech.name}
                             className="backdrop-blur-sm rounded-xl p-2 flex flex-col items-center 
-                                     border border-transparent
-                                     hover:translate-y-[-5px] hover:scale-105 transition-transform duration-300 group"
+                                 border border-transparent
+                                 hover:translate-y-[-5px] hover:scale-105 transition-transform duration-300 group"
                             itemProp="itemListElement"
                             itemScope
                             itemType="https://schema.org/ListItem"
@@ -168,7 +168,7 @@ const Skills: FC = () => {
                                 <div className="flex justify-center mb-1 group-hover:scale-110 transition-transform duration-300">
                                     {tech.icon}
                                 </div>
-                                <h4 className="text-xs font-medium" itemProp="name">{tech.name}</h4>
+                                <h4 className="text-xs font-medium truncate max-w-full" itemProp="name">{tech.name}</h4>
                             </div>
                             <div className="hidden" itemProp="description">{tech.description}</div>
                         </div>

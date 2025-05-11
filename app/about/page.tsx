@@ -1,11 +1,11 @@
 "use client";
 
 import Image from "next/image";
-import { Download, ExternalLink, Github, Linkedin, Mail } from "lucide-react";
+import { Download, ExternalLink, Github, Instagram, Linkedin, Mail } from "lucide-react";
 
 const AboutPage = () => {
     return (
-        <div className=" text-gray-300 min-h-screen  pb-16 px-4 sm:px-6 lg:px-8">
+        <div className=" text-gray-300 min-h-screen py-20  pb-16 px-4 sm:px-6 lg:px-8">
             {/* Background effects */}
             <div className="fixed top-1/4 -left-20 w-64 h-64 rounded-full blur-[100px] -z-10"></div>
             <div className="fixed bottom-1/4 -right-20 w-64 h-64 rounded-full blur-[100px] -z-10"></div>
@@ -40,32 +40,32 @@ const AboutPage = () => {
                                 </div>
                             </div>
 
-                            <a
-                                href="#"
+                            {/* <a
+                                href="/bimal pandey.pdf"
                                 className="flex items-center bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg transition-colors duration-300"
-                                download="Bimal_Pandey_Resume.pdf"
+                                download="bimal pandey.pdf"
                             >
                                 <Download size={18} className="mr-2" />
-                                <span>Download PDF</span>
-                            </a>
+                                <span>Download Resume</span>
+                            </a> */}
                         </div>
 
                         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div className="flex items-center">
                                 <Mail size={18} className="mr-2 text-purple-400" />
-                                <a href="mailto:bimal@example.com" className="hover:text-purple-400 transition-colors">bimal@example.com</a>
+                                <a href="mailto:pandeybimal616@gmail.com" className="hover:text-purple-400 transition-colors">pandeybimal616@gmail.com</a>
                             </div>
                             <div className="flex items-center">
                                 <Github size={18} className="mr-2 text-purple-400" />
                                 <a href="https://github.com/bimal-pandey" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 transition-colors">github.com/bimal-pandey</a>
                             </div>
                             <div className="flex items-center">
-                                <Linkedin size={18} className="mr-2 text-purple-400" />
-                                <a href="https://linkedin.com/in/bimal-pandey" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 transition-colors">linkedin.com/in/bimal-pandey</a>
+                                <Instagram size={18} className="mr-2 text-purple-400" />
+                                <a href="https://instagram.com/bunchoo_graphics11" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 transition-colors">instagram.com/bunchoo_graphics11</a>
                             </div>
                             <div className="flex items-center">
                                 <ExternalLink size={18} className="mr-2 text-purple-400" />
-                                <a href="https://bimalpandey.com" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 transition-colors">bimalpandey.com</a>
+                                <a href="https://bimalpandey11.com.np" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 transition-colors">bimalpandey11.com.np</a>
                             </div>
                         </div>
                     </div>
@@ -80,9 +80,9 @@ const AboutPage = () => {
                             </h3>
                             <div className="card-gradient p-6 rounded-lg border border-white/5 shadow-md hover:border-purple-500/30 transition-all duration-300">
                                 <p className="leading-relaxed">
-                                    Dedicated Full Stack Developer with 5+ years of experience building scalable web applications
-                                    and optimizing user experiences. Proficient in modern JavaScript frameworks, responsive design,
-                                    and server-side technologies. Passionate about clean code and collaborative development.
+                                    Motivated and passionate Full Stack Developer with hands-on experience in building responsive web
+                                    applications through freelance projects. Skilled in modern UI/UX design and backend development.
+                                    Currently pursuing BCA, seeking opportunities to contribute to innovative tech teams.
                                 </p>
                             </div>
                         </section>
@@ -97,7 +97,7 @@ const AboutPage = () => {
                                 <div className="card-gradient p-6 rounded-lg border border-white/5 shadow-md hover:border-purple-500/30 transition-all duration-300">
                                     <h4 className="font-semibold text-purple-400 mb-3">Frontend</h4>
                                     <div className="flex flex-wrap gap-3">
-                                        {["React", "Next.js", "Redux", "TypeScript", "Tailwind CSS", "Responsive Design"].map((tech, index) => (
+                                        {["React", "Next.js", "Zustand", "Tailwind CSS", "Shadcn/ui", "Responsive Design"].map((tech, index) => (
                                             <span key={index} className="text-sm bg-gray-800 text-gray-300 px-3 py-1 rounded-full">
                                                 {tech}
                                             </span>
@@ -107,7 +107,7 @@ const AboutPage = () => {
                                 <div className="card-gradient p-6 rounded-lg border border-white/5 shadow-md hover:border-purple-500/30 transition-all duration-300">
                                     <h4 className="font-semibold text-purple-400 mb-3">Backend</h4>
                                     <div className="flex flex-wrap gap-3">
-                                        {["Node.js", "Express", "MongoDB", "PostgreSQL", "GraphQL", "Docker", "AWS"].map((tech, index) => (
+                                        {["Node.js", "Express", "MongoDB", "Mongoose", "Drizzle ORM", "JWT", "Neon DB"].map((tech, index) => (
                                             <span key={index} className="text-sm bg-gray-800 text-gray-300 px-3 py-1 rounded-full">
                                                 {tech}
                                             </span>
@@ -121,34 +121,34 @@ const AboutPage = () => {
                         <section className="mb-12">
                             <h3 className="text-xl font-bold text-white mb-4 flex items-center">
                                 <span className="w-8 h-0.5 bg-purple-500 rounded-full mr-3"></span>
-                                Work Experience
+                                Projects
                             </h3>
 
                             <div className="space-y-8">
                                 <div className="card-gradient p-6 rounded-lg border border-white/5 shadow-md hover:border-purple-500/30 transition-all duration-300">
                                     <div className="flex justify-between items-start mb-4">
                                         <div>
-                                            <h4 className="text-lg font-semibold text-white">Senior Full Stack Developer</h4>
-                                            <p className="text-purple-400">TechCorp Solutions</p>
+                                            <h4 className="text-lg font-semibold text-white">BrandStage - Event Booking Platform</h4>
+                                            <p className="text-purple-400">Self-Employed / Freelance</p>
                                         </div>
-                                        <p className="text-sm bg-gray-800 text-gray-300 px-3 py-1 rounded-full">2022 - Present</p>
+                                        <p className="text-sm bg-gray-800 text-gray-300 px-3 py-1 rounded-full">React, Zustand, Shadcn/ui</p>
                                     </div>
                                     <ul className="space-y-2">
                                         <li className="flex items-start">
                                             <span className="text-purple-400 mr-2">•</span>
-                                            <span>Led development of a customer portal using Next.js and Node.js</span>
+                                            <span>Built an all-in-one event booking platform allowing users to book events, rent event essentials, and reserve venues</span>
                                         </li>
                                         <li className="flex items-start">
                                             <span className="text-purple-400 mr-2">•</span>
-                                            <span>Implemented authentication system reducing login issues by 40%</span>
+                                            <span>Leveraged Zustand for state management to efficiently handle user sessions, event selections, and rental items</span>
                                         </li>
                                         <li className="flex items-start">
                                             <span className="text-purple-400 mr-2">•</span>
-                                            <span>Optimized database queries improving page load times by 60%</span>
+                                            <span>Utilized Shadcn/ui for creating a responsive and elegant UI that works seamlessly across devices</span>
                                         </li>
                                         <li className="flex items-start">
                                             <span className="text-purple-400 mr-2">•</span>
-                                            <span>Mentored junior developers and conducted code reviews</span>
+                                            <span>Designed an intuitive and user-friendly experience for event organizers, venue managers, and renters</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -156,27 +156,55 @@ const AboutPage = () => {
                                 <div className="card-gradient p-6 rounded-lg border border-white/5 shadow-md hover:border-purple-500/30 transition-all duration-300">
                                     <div className="flex justify-between items-start mb-4">
                                         <div>
-                                            <h4 className="text-lg font-semibold text-white">Full Stack Developer</h4>
-                                            <p className="text-purple-400">WebDev Agency</p>
+                                            <h4 className="text-lg font-semibold text-white">E-commerce App</h4>
+                                            <p className="text-purple-400">Self-Employed / Freelance</p>
                                         </div>
-                                        <p className="text-sm bg-gray-800 text-gray-300 px-3 py-1 rounded-full">2019 - 2022</p>
+                                        <p className="text-sm bg-gray-800 text-gray-300 px-3 py-1 rounded-full">Next.js, Drizzle ORM, Zustand</p>
                                     </div>
                                     <ul className="space-y-2">
                                         <li className="flex items-start">
                                             <span className="text-purple-400 mr-2">•</span>
-                                            <span>Built responsive web applications for diverse clients</span>
+                                            <span>Created a modern product listing page with filters, search, and cart functionality including admin panel for product management</span>
                                         </li>
                                         <li className="flex items-start">
                                             <span className="text-purple-400 mr-2">•</span>
-                                            <span>Integrated payment gateways and third-party APIs</span>
+                                            <span>Built dynamic product listing pages with search, category filters, loading states, and responsive design</span>
                                         </li>
                                         <li className="flex items-start">
                                             <span className="text-purple-400 mr-2">•</span>
-                                            <span>Developed reusable component library used across projects</span>
+                                            <span>Integrated backend APIs using Express.js and Drizzle ORM to handle CRUD operations and database communication</span>
                                         </li>
                                         <li className="flex items-start">
                                             <span className="text-purple-400 mr-2">•</span>
-                                            <span>Collaborated in agile teams for project delivery</span>
+                                            <span>Implemented a fully functional shopping cart system with state management using Zustand</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div className="card-gradient p-6 rounded-lg border border-white/5 shadow-md hover:border-purple-500/30 transition-all duration-300">
+                                    <div className="flex justify-between items-start mb-4">
+                                        <div>
+                                            <h4 className="text-lg font-semibold text-white">Next Gen Club Website with Admin Panel</h4>
+                                            <p className="text-purple-400">Self-Employed / Freelance</p>
+                                        </div>
+                                        <p className="text-sm bg-gray-800 text-gray-300 px-3 py-1 rounded-full">Next.js, MongoDB, Zustand</p>
+                                    </div>
+                                    <ul className="space-y-2">
+                                        <li className="flex items-start">
+                                            <span className="text-purple-400 mr-2">•</span>
+                                            <span>Developed a quiz platform with subject-wise MCQs, real-time scoring, and a clean, responsive user interface</span>
+                                        </li>
+                                        <li className="flex items-start">
+                                            <span className="text-purple-400 mr-2">•</span>
+                                            <span>Implemented JWT-based authentication to ensure secure user login and role-based access control</span>
+                                        </li>
+                                        <li className="flex items-start">
+                                            <span className="text-purple-400 mr-2">•</span>
+                                            <span>Integrated backend APIs using Express.js and Mongoose to handle CRUD operations</span>
+                                        </li>
+                                        <li className="flex items-start">
+                                            <span className="text-purple-400 mr-2">•</span>
+                                            <span>Supported dynamic question loading and state management for smooth user experience</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -189,13 +217,24 @@ const AboutPage = () => {
                                 <span className="w-8 h-0.5 bg-purple-500 rounded-full mr-3"></span>
                                 Education
                             </h3>
-                            <div className="card-gradient p-6 rounded-lg border border-white/5 shadow-md hover:border-purple-500/30 transition-all duration-300">
-                                <div className="flex justify-between items-start">
-                                    <div>
-                                        <h4 className="text-lg font-semibold text-white">Bachelor of Science, Computer Science</h4>
-                                        <p className="text-purple-400">University of Technology</p>
+                            <div className="space-y-4">
+                                <div className="card-gradient p-6 rounded-lg border border-white/5 shadow-md hover:border-purple-500/30 transition-all duration-300">
+                                    <div className="flex justify-between items-start">
+                                        <div>
+                                            <h4 className="text-lg font-semibold text-white">Bachelor in Computer Applications (BCA)</h4>
+                                            <p className="text-purple-400">Kalika Campus</p>
+                                        </div>
+                                        <p className="text-sm bg-gray-800 text-gray-300 px-3 py-1 rounded-full">2024 - Present</p>
                                     </div>
-                                    <p className="text-sm  text-gray-300 px-3 py-1 rounded-full">2015 - 2019</p>
+                                </div>
+                                <div className="card-gradient p-6 rounded-lg border border-white/5 shadow-md hover:border-purple-500/30 transition-all duration-300">
+                                    <div className="flex justify-between items-start">
+                                        <div>
+                                            <h4 className="text-lg font-semibold text-white">+2</h4>
+                                            <p className="text-purple-400">Kanti Secondary School</p>
+                                        </div>
+                                        <p className="text-sm bg-gray-800 text-gray-300 px-3 py-1 rounded-full">2022 - 2023</p>
+                                    </div>
                                 </div>
                             </div>
                         </section>
