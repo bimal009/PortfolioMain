@@ -40,7 +40,6 @@ const Contact: React.FC = () => {
 
             reset();
             setSubmitStatus('success');
-            console.log(data)
 
             // Reset success message after 5 seconds
             setTimeout(() => {
