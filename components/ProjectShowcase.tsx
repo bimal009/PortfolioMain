@@ -30,32 +30,32 @@ const Project = ({
 }: ProjectProps) => {
     return (
         <article
-            className={`flex flex-col ${isReversed ? 'md:flex-row-reverse' : 'md:flex-row'} gap-4 md:gap-8 mb-16 md:mb-24 items-center`}
+            className={`flex flex-col ${isReversed ? 'md:flex-row-reverse' : 'md:flex-row'} gap-6 md:gap-10 mb-16 md:mb-24 items-center`}
             itemScope
             itemType="https://schema.org/CreativeWork"
         >
             {/* Text content */}
             <div className="w-full md:w-1/2 flex flex-col justify-center">
-                <div className="text-sm text-purple-400 mb-2 font-medium" itemProp="category">{category}</div>
+                <div className="text-sm text-purple-400 mb-2 font-medium tracking-wide" itemProp="category">{category}</div>
 
-                <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4" itemProp="name">
+                <h3 className="text-2xl md:text-3xl font-bold mb-4 md:mb-5" itemProp="name">
                     <Link href={`/projects/${slug}`} className="hover:text-purple-400 transition-colors">
                         {title}
                     </Link>
                 </h3>
 
-                <div className="card-gradient p-4 md:p-6 rounded-lg border border-white/5 shadow-lg hover:border-purple-500/30 transition-all duration-300">
-                    <p className="text-gray-300 text-sm md:text-base leading-relaxed" itemProp="description">
+                <div className="card-gradient p-5 md:p-6 rounded-lg border border-white/10 shadow-lg hover:border-purple-500/30 transition-all duration-300">
+                    <p className="text-gray-300 text-base leading-relaxed" itemProp="description">
                         {description}
                     </p>
                 </div>
 
                 {/* Technologies used - scrollable on mobile */}
-                <div className="mt-4 md:mt-6 flex flex-wrap gap-2 md:gap-3 overflow-x-auto pb-2 max-w-full">
+                <div className="mt-5 md:mt-6 flex flex-wrap gap-2 md:gap-3 overflow-x-auto pb-2 max-w-full">
                     {technologies.map((tech, index) => (
                         <span
                             key={index}
-                            className="text-xs md:text-sm border border-purple-400 text-gray-300 px-2 md:px-3 py-1 rounded-full whitespace-nowrap"
+                            className="text-xs md:text-sm border border-purple-400/50 text-gray-300 px-3 py-1 rounded-full whitespace-nowrap bg-purple-900/20 hover:bg-purple-900/30 transition-colors"
                             itemProp="keywords"
                         >
                             {tech}
@@ -64,17 +64,17 @@ const Project = ({
                 </div>
 
                 {/* Project links */}
-                <div className="mt-4 md:mt-6 flex gap-4 md:gap-6">
+                <div className="mt-5 md:mt-6 flex gap-4 md:gap-6">
                     {liveUrl && (
                         <Link
                             href={liveUrl}
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label={`Live demo for ${title}`}
-                            className="flex items-center gap-2 text-xs md:text-sm text-gray-300 hover:text-purple-400 transition-colors"
+                            className="flex items-center gap-2 text-sm font-medium text-gray-300 hover:text-purple-400 transition-colors group"
                             itemProp="url"
                         >
-                            <ExternalLink size={16} />
+                            <ExternalLink size={18} className="group-hover:translate-x-1 transition-transform" />
                             <span>Live Demo</span>
                         </Link>
                     )}
@@ -82,9 +82,9 @@ const Project = ({
             </div>
 
             {/* Image with optimized loading */}
-            <div className="w-full md:w-1/2 mt-4 md:mt-0">
+            <div className="w-full md:w-1/2 mt-6 md:mt-0">
                 <Link href={liveUrl || ''} aria-label={`View details of ${title} project`}>
-                    <div className="project-card p-2 md:p-3 overflow-hidden rounded-lg border border-white/10 hover:border-purple-500/40 transition-all duration-300 shadow-lg">
+                    <div className="project-card p-3 md:p-4 overflow-hidden rounded-lg border border-white/10 hover:border-purple-500/40 transition-all duration-300 shadow-xl bg-gray-900/50">
                         <div className="relative w-full aspect-video overflow-hidden rounded-md">
                             <Image
                                 src={imageSrc}
@@ -108,8 +108,8 @@ const FeaturedProjects = () => {
         {
             title: "NextGen Club Admin & Public Portal",
             slug: "nextgen-club-admin-portal",
-            description: "A fully responsive and scalable web app built for the NextGen Innovator Club to streamline operations and boost student engagement. It features a secure admin panel built with Node.js and Express, allowing admin users to manage events, members, and club resources efficiently. The app uses MongoDB as the database to store user information, events, and announcements. JWT Authentication is used for secure login and user management. The public-facing site, built with Next.js and Tailwind CSS, provides a clean, mobile-friendly layout for showcasing club info and announcements.",
-            imageSrc: "/project1.png ", // Add your project image here
+            description: "A fully responsive and scalable web app built for the NextGen Innovator Club to streamline operations and boost student engagement. It features a secure admin panel built with Node.js and Express, allowing admin users to manage events, members, and club resources efficiently.",
+            imageSrc: "/project1.png", // Add your project image here
             technologies: [
                 "Next.js",
                 "Tailwind CSS",
@@ -118,18 +118,15 @@ const FeaturedProjects = () => {
                 "shadcn/ui",
                 "Node.js",
                 "MongoDB",
-                "JWT Authentication",
-                "Express",
-                "bcryptjs",
-                "jsonwebtoken"
+                "JWT Auth"
             ],
             liveUrl: "https://next-gen-it-eight.vercel.app/", // Replace with your live URL
             category: "Full Stack Application"
         },
         {
-            title: "UrbanAura – Modern E-commerce UI with React",
+            title: "UrbanAura – E-commerce UI",
             slug: "urbanaura-ecommerce-ui",
-            description: "UrbanAura is a sleek, responsive e-commerce frontend built using React and styled with Tailwind CSS and shadcn/ui. It features dynamic product listings and category-based filtering powered by the FakeStore API. Data is fetched using TanStack Query, while Zustand handles lightweight state management. On the backend, Express is used to handle API requests, with JWT Authentication for user security. The app's data is stored in a Neon PostgreSQL database and managed through Drizzle ORM, allowing for efficient interaction with the database for product and user data.",
+            description: "UrbanAura is a sleek, responsive e-commerce frontend built using React and styled with Tailwind CSS and shadcn/ui. It features dynamic product listings and category-based filtering powered by the FakeStore API. Data is fetched using TanStack Query, with Zustand for state management.",
             imageSrc: "/project2.png", // Add your project image here
             technologies: [
                 "React",
@@ -138,9 +135,7 @@ const FeaturedProjects = () => {
                 "Tailwind CSS",
                 "shadcn/ui",
                 "Neon PostgreSQL",
-                "Drizzle ORM",
-                "Express",
-                "JWT Authentication"
+                "Drizzle ORM"
             ],
             liveUrl: "https://urbanauranp.vercel.app", // Replace with your live URL
             category: "Frontend Application"
@@ -148,7 +143,7 @@ const FeaturedProjects = () => {
         {
             title: "BrandStage - Event Booking Platform",
             slug: "brandstage-event-booking",
-            description: "BrandStage is an all-in-one event booking platform that allows users to book events, rent event essentials (like furniture, lighting, and audio equipment), and even reserve venues. Built using React, this platform leverages Zustand for state management to efficiently manage user sessions, event selections, and rental items. Shadcn/ui is utilized for creating a responsive and elegant UI, ensuring the platform works seamlessly across devices. The system provides an intuitive and user-friendly experience for event organizers, venue managers, and renters.",
+            description: "BrandStage is an all-in-one event booking platform that allows users to book events, rent event essentials, and reserve venues. Built using React with Zustand for state management to efficiently manage user sessions, event selections, and rental items.",
             imageSrc: "/project3.png", // Replace with your project image here
             technologies: [
                 "React",
@@ -162,41 +157,41 @@ const FeaturedProjects = () => {
         }
     ];
 
-
-
     return (
         <section
-            className="py-16 md:py-24 px-4 sm:px-6 md:px-12 overflow-hidden"
+            className="py-20 md:py-28 px-4 sm:px-6 md:px-8 overflow-hidden bg-gradient-to-b "
             aria-labelledby="projects-heading"
             itemScope
             itemType="https://schema.org/CollectionPage"
         >
+
             <div className="max-w-6xl mx-auto">
                 {/* Section header with balanced styling */}
-                <div className="mb-10 md:mb-16 text-center">
-                    <p className="text-purple-400 text-sm font-medium mb-2">MY WORK</p>
+                <div className="mb-16 md:mb-20 text-center">
+                    <p className="text-purple-400 text-sm font-semibold uppercase tracking-wider mb-3">MY WORK</p>
                     <h2
                         id="projects-heading"
-                        className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4"
+                        className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-5 bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-300"
                         itemProp="name"
                     >
                         Featured Projects
                     </h2>
                     <div className="flex justify-center">
-                        <div className="w-16 h-1 bg-purple-500 rounded-full mb-4 md:mb-6"></div>
+                        <div className="w-20 h-1 bg-gradient-to-r from-purple-500 to-purple-700 rounded-full mb-6"></div>
                     </div>
-                    <p className="text-gray-300 mt-3 md:mt-4 max-w-2xl mx-auto text-sm md:text-lg" itemProp="description">
+                    <p className="text-gray-300 max-w-2xl mx-auto text-base md:text-lg" itemProp="description">
                         A curated selection of my recent work showcasing my skills in web development and problem-solving.
                     </p>
                 </div>
 
-                {/* Background glow effects for visual interest - positioned to avoid overflow */}
+                {/* Background glow effects for visual interest - positioned for better balance */}
                 <div className="relative">
-                    <div className="absolute top-1/4 -left-20 w-32 md:w-64 h-32 md:h-64 bg-purple-500/10 rounded-full blur-[50px] md:blur-[100px] -z-10"></div>
-                    <div className="absolute bottom-1/4 -right-20 w-32 md:w-64 h-32 md:h-64 bg-blue-500/10 rounded-full blur-[50px] md:blur-[100px] -z-10"></div>
+                    <div className="absolute top-1/3 -left-10 w-64 h-64 bg-purple-600/10 rounded-full blur-[120px] -z-10"></div>
+                    <div className="absolute bottom-1/3 -right-10 w-64 h-64 bg-blue-600/10 rounded-full blur-[120px] -z-10"></div>
+                    <div className="absolute top-2/3 left-1/2 transform -translate-x-1/2 w-96 h-32 bg-purple-500/5 rounded-full blur-[80px] -z-10"></div>
 
                     {/* Projects list with improved spacing */}
-                    <div itemProp="mainEntity" itemScope itemType="https://schema.org/ItemList" className="space-y-16 md:space-y-32">
+                    <div itemProp="mainEntity" itemScope itemType="https://schema.org/ItemList" className="space-y-20 md:space-y-32">
                         {projects.map((project, index) => (
                             <div key={project.slug} itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
                                 <meta itemProp="position" content={String(index + 1)} />
@@ -210,13 +205,16 @@ const FeaturedProjects = () => {
                 </div>
 
                 {/* View all projects button with balanced styling */}
-                <div className="text-center mt-10 md:mt-16">
+                <div className="text-center mt-16 md:mt-20">
                     <Link
                         href="/projects"
-                        className="inline-block bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 md:py-3 px-6 md:px-8 rounded-lg transition-colors duration-300 text-sm md:text-base"
+                        className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white font-medium py-3 px-8 rounded-lg transition-all duration-300 text-base shadow-lg hover:shadow-purple-500/20"
                         aria-label="View all projects"
                     >
                         View All Projects
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="ml-1">
+                            <path d="m9 18 6-6-6-6" />
+                        </svg>
                     </Link>
                 </div>
             </div>
