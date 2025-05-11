@@ -111,7 +111,7 @@ const ProjectsPage = () => {
                                 }`}
                         >
                             <Layout size={16} className="mr-2" />
-                            All Projects
+                            All
                         </button>
                         <button
                             onClick={() => setFilter("freelance")}

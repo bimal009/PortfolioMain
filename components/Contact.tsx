@@ -5,6 +5,7 @@ import { Instagram, Twitter, Send } from "lucide-react";
 import Link from "next/link";
 import { useForm, SubmitHandler } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
+import { useState } from 'react';
 
 interface FormValues {
     name: string;
@@ -13,15 +14,19 @@ interface FormValues {
 }
 
 const Contact: React.FC = () => {
+    const [submitStatus, setSubmitStatus] = useState<'idle' | 'submitting' | 'success' | 'error'>('idle');
+
     const {
         register,
         handleSubmit,
         reset,
-        formState: { errors, isSubmitting, isSubmitSuccessful }
+        formState: { errors }
     } = useForm<FormValues>();
 
     const onSubmit: SubmitHandler<FormValues> = async (data) => {
         try {
+            setSubmitStatus('submitting');
+
             await emailjs.send(
                 process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
                 process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
@@ -32,9 +37,23 @@ const Contact: React.FC = () => {
                 },
                 process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY as string
             );
+
             reset();
+            setSubmitStatus('success');
+            console.log(data)
+
+            // Reset success message after 5 seconds
+            setTimeout(() => {
+                setSubmitStatus('idle');
+            }, 5000);
         } catch (error) {
             console.error('Failed to send email:', error);
+            setSubmitStatus('error');
+
+            // Reset error message after 5 seconds
+            setTimeout(() => {
+                setSubmitStatus('idle');
+            }, 5000);
         }
     };
 
@@ -122,10 +141,10 @@ const Contact: React.FC = () => {
 
                             <button
                                 type="submit"
-                                disabled={isSubmitting}
+                                disabled={submitStatus === 'submitting'}
                                 className="w-full bg-purple-600 hover:bg-purple-700 text-white font-medium py-2 rounded-md flex items-center justify-center gap-2 disabled:opacity-70 text-sm md:text-base"
                             >
-                                {isSubmitting ? (
+                                {submitStatus === 'submitting' ? (
                                     <>
                                         <div className="animate-spin h-4 w-4 border-2 border-white border-t-transparent rounded-full"></div>
                                         <span>Sending...</span>
@@ -138,15 +157,19 @@ const Contact: React.FC = () => {
                                 )}
                             </button>
 
-                            {isSubmitSuccessful && (
+                            {submitStatus === 'success' && (
                                 <div className="mt-3 p-2 rounded-md text-center flex justify-center items-center text-green-400 text-xs md:text-sm">
                                     Thank you for your message! I&apos;ll get back to you soon.
                                 </div>
                             )}
+
+                            {submitStatus === 'error' && (
+                                <div className="mt-3 p-2 rounded-md text-center flex justify-center items-center text-red-400 text-xs md:text-sm">
+                                    Failed to send message. Please try again later.
+                                </div>
+                            )}
                         </form>
                     </div>
-
-
                 </div>
             </div>
         </div>
@@ -154,4 +177,3 @@ const Contact: React.FC = () => {
 };
 
 export default Contact;
-
