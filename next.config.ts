@@ -1,3 +1,4 @@
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
@@ -5,16 +6,17 @@ const nextConfig = {
   output: 'export',
   images: {
     unoptimized: true,
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    formats: ['image/webp'],
-    minimumCacheTTL: 60,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**',
+      },
+    ],
   },
   reactStrictMode: true,
   compress: true,
   poweredByHeader: false,
-  experimental: {
-    optimizeCss: true,
-  },
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/' : '',
 };
 
 module.exports = nextConfig;

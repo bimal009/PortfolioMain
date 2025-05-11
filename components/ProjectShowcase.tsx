@@ -29,6 +29,7 @@ const Project = ({
     category
 }: ProjectProps) => {
     return (
+
         <article
             className={`flex flex-col ${isReversed ? 'md:flex-row-reverse' : 'md:flex-row'} gap-6 md:gap-10 mb-16 md:mb-24 items-center`}
             itemScope
@@ -81,7 +82,7 @@ const Project = ({
                 </div>
             </div>
 
-            {/* Image with optimized loading */}
+            {/* Image with optimized loading - MODIFIED FOR STATIC EXPORT */}
             <div className="w-full md:w-1/2 mt-6 md:mt-0">
                 <Link href={liveUrl || ''} aria-label={`View details of ${title} project`}>
                     <div className="project-card p-3 md:p-4 overflow-hidden rounded-lg border border-white/10 hover:border-purple-500/40 transition-all duration-300 shadow-xl ">
@@ -89,11 +90,11 @@ const Project = ({
                             <Image
                                 src={imageSrc}
                                 alt={`Screenshot of ${title} project`}
-                                fill
-                                sizes="(max-width: 768px) 100vw, 50vw"
-                                className="object-cover rounded-md hover:scale-105 transition-transform duration-500"
+                                width={800}
+                                height={450}
+                                className="object-cover rounded-md hover:scale-105 transition-transform duration-500 w-full h-auto"
                                 itemProp="image"
-                                loading="lazy"
+                                priority={true}
                             />
                         </div>
                     </div>
