@@ -62,7 +62,7 @@ const Navbar = () => {
           </div>
           <div className="ml-2 md:ml-3">
             <span className="font-bold text-base md:text-xl text-white">Bimal Pandey</span>
-            <span className="block text-xs text-purple-300 hidden xs:block">Full Stack Developer</span>
+            <span className="block text-xs text-purple-300  xs:block">Full Stack Developer</span>
           </div>
         </Link>
 
@@ -74,8 +74,8 @@ const Navbar = () => {
                 <Link
                   href={item.path}
                   className={`px-4 py-2 mx-1 rounded-md font-medium transition-colors ${pathname === item.path
-                      ? "text-white border-b-2 border-purple-400"
-                      : "text-purple-200 hover:text-white hover:bg-white/10"
+                    ? "text-white border-b-2 border-purple-400"
+                    : "text-purple-200 hover:text-white hover:bg-white/10"
                     }`}
                   aria-current={pathname === item.path ? 'page' : undefined}
                 >
@@ -111,8 +111,8 @@ const Navbar = () => {
                 <Link
                   href={item.path}
                   className={`block py-2.5 px-3 ${pathname === item.path
-                      ? "text-white font-medium bg-white/5 border-l-4 border-purple-400"
-                      : "text-purple-200 hover:text-white"
+                    ? "text-white font-medium bg-white/5 border-l-4 border-purple-400"
+                    : "text-purple-200 hover:text-white"
                     }`}
                   onClick={() => setIsMenuOpen(false)}
                   aria-current={pathname === item.path ? 'page' : undefined}

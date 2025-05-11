@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Instagram, Twitter, Linkedin, Mail } from "lucide-react";
+import { Github, Instagram, Twitter } from "lucide-react";
 import Link from "next/link";
 import Head from "next/head";
 

@@ -39,7 +39,7 @@ const Contact: React.FC = () => {
     };
 
     return (
-        <div className="text-gray-300 min-h-screen py-12 md:py-16 px-4">
+        <div className="text-gray-300 min-h-1/2 py-12 md:py-16 px-4">
             {/* Simple background effect - made smaller for mobile */}
             <div className="fixed top-1/4 -left-20 w-32 md:w-64 h-32 md:h-64 rounded-full blur-[50px] md:blur-[100px] -z-10"></div>
 
