@@ -138,14 +138,14 @@ const FeaturedProjects = () => {
                 "Neon PostgreSQL",
                 "Drizzle ORM"
             ],
-            liveUrl: "https://urbanauranp.vercel.app", // Replace with your live URL
+            liveUrl: "https://urbanauranp.vercel.app",
             category: "Frontend Application"
         },
         {
             title: "BrandStage - Event Booking Platform",
             slug: "brandstage-event-booking",
             description: "BrandStage is an all-in-one event booking platform that allows users to book events, rent event essentials, and reserve venues. Built using React with Zustand for state management to efficiently manage user sessions, event selections, and rental items.",
-            imageSrc: "/project3.png", // Replace with your project image here
+            imageSrc: "/project3.jpg",
             technologies: [
                 "React",
                 "Zustand",
