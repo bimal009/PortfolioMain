@@ -127,8 +127,8 @@ const FeaturedProjects = () => {
         {
             title: "UrbanAura – E-commerce app with admin panel",
             slug: "urbanaura-ecommerce-ui",
-            description: "UrbanAura is a sleek, responsive e-commerce frontend built using React and styled with Tailwind CSS and shadcn/ui. It features dynamic product listings and category-based filtering powered by the FakeStore API. Data is fetched using TanStack Query, with Zustand for state management.",
-            imageSrc: "/project2.png", // Add your project image here
+            description: "UrbanAura is a sleek, responsive e-commerce platform featuring dynamic product listings and category-based filtering. Built with React, Tailwind CSS, and ShadCN/UI, the frontend offers a seamless user experience. Data is fetched from the backend through a REST API, with TanStack Query for data fetching and Zustand for state management.",
+            imageSrc: "/project2.jpg", // Add your project image here
             technologies: [
                 "React",
                 "TanStack Query",
