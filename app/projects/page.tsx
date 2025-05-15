@@ -12,7 +12,7 @@ const ProjectsPage = () => {
             id: 1,
             title: "BrandStage - Event Booking Platform",
             category: "freelance",
-            image: "/project3.png",
+            image: "/project3.jpg",
             description: "An all-in-one event booking platform allowing users to book events, rent event essentials, and reserve venues.",
             technologies: ["React", "Zustand", "Shadcn/ui", "Tailwind CSS", "ReactQuery"],
             features: [
@@ -29,7 +29,7 @@ const ProjectsPage = () => {
             id: 2,
             title: "Urbanaura - E-commerce App",
             category: "freelance",
-            image: "/project2.png",
+            image: "/project2.jpg",
             description: "A modern e-commerce platform with product listings, cart functionality, and comprehensive admin controls.",
             technologies: ["Next.js", "Drizzle ORM", "Zustand", "Tailwind CSS", "Neon DB", "JWT"],
             features: [
