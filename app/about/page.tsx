@@ -57,7 +57,7 @@ const AboutPage = () => {
                             </div>
                             <div className="flex items-center">
                                 <Github size={18} className="mr-2 text-purple-400" />
-                                <a href="https://github.com/bimal-pandey" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 transition-colors">github.com/bimal-pandey</a>
+                                <a href="https://github.com/bimal009" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400 transition-colors">github.com/bimal-pandey</a>
                             </div>
                             <div className="flex items-center">
                                 <Instagram size={18} className="mr-2 text-purple-400" />
