@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bimalpandey11.com.np/sitemap.xml
