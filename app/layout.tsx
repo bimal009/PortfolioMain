@@ -171,8 +171,8 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/logo.svg", sizes: "any" },
+      { url: "/logo.svg", type: "image/svg+xml" },
       { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
     ],
     apple: [
