@@ -153,7 +153,7 @@ const FeaturedProjects = () => {
                 "Tailwind CSS",
                 "Responsive Design"
             ],
-            liveUrl: "https://brandstage.io/", // Live URL
+            liveUrl: "https://brandstage.io/", // changed Live URL
             category: "Frontend Application"
         }
     ];
