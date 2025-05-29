@@ -153,7 +153,7 @@ const FeaturedProjects = () => {
                 "Tailwind CSS",
                 "Responsive Design"
             ],
-            liveUrl: "https://brandstage.vercel.app/", // Live URL
+            liveUrl: "https://brandstage.io/", // Live URL
             category: "Frontend Application"
         }
     ];

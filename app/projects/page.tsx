@@ -22,7 +22,7 @@ const ProjectsPage = () => {
                 "Responsive design",
                 "User authentication and profile management",
             ],
-            demo: "https://brandstage.vercel.app/",
+            demo: "https://brandstage.io/",
             date: "January 2025"
         },
         {
