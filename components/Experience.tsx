@@ -35,10 +35,10 @@ const WorkCard = ({
 
 const WorkExperience = () => {
     const workItems = [
-        { id: 1, title: "CIB on the Mobile", imgSrc: "/work1.jpg" },
-        { id: 2, title: "CIB on the Mobile", imgSrc: "/work2.jpg" },
-        { id: 3, title: "CIB on the Mobile", imgSrc: "/work3.jpg" },
-        { id: 4, title: "CIB on the Mobile", imgSrc: "/work4.jpg" },
+        { id: 1, title: "CIB on the Mobile", imgSrc: "/work1.webp" },
+        { id: 2, title: "CIB on the Mobile", imgSrc: "/work2.webp" },
+        { id: 3, title: "CIB on the Mobile", imgSrc: "/work3.webp" },
+        { id: 4, title: "CIB on the Mobile", imgSrc: "/work4.webp" },
     ];
 
     return (

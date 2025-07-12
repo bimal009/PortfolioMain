@@ -12,7 +12,7 @@ const ProjectsPage = () => {
             id: 1,
             title: "BrandStage - Event Booking Platform",
             category: "freelance",
-            image: "/project3.jpg",
+            image: "/project3.webp",
             description: "An all-in-one event booking platform allowing users to book events, rent event essentials, and reserve venues.",
             technologies: ["React", "Zustand", "Shadcn/ui", "Tailwind CSS", "ReactQuery"],
             features: [
@@ -29,7 +29,7 @@ const ProjectsPage = () => {
             id: 2,
             title: "Urbanaura - E-commerce App",
             category: "freelance",
-            image: "/project2.jpg",
+            image: "/project2.webp",
             description: "A modern e-commerce platform with product listings, cart functionality, and comprehensive admin controls.",
             technologies: ["Next.js", "Drizzle ORM", "Zustand", "Tailwind CSS", "Neon DB", "JWT"],
             features: [
@@ -46,7 +46,7 @@ const ProjectsPage = () => {
             id: 3,
             title: "Next Gen Club Website with Admin Panel",
             category: "freelance",
-            image: "/nextgen.png",
+            image: "/nextgen.webp",
             description: "A comprehensive club website featuring a quiz platform with subject-wise MCQs and real-time scoring.",
             technologies: ["Next.js", "MongoDB", "Zustand", "JWT", "Express", "Mongoose"],
             features: [
@@ -64,7 +64,7 @@ const ProjectsPage = () => {
             id: 4,
             title: "Portfolio Website",
             category: "personal",
-            image: "/portfolio.png",
+            image: "/portfolio.webp",
             description: "A personal portfolio showcasing my skills, projects, and experience as a full stack developer.",
             technologies: ["Next.js", "Tailwind CSS", "React", "Shadcn/ui"],
             features: [
@@ -152,7 +152,7 @@ const ProjectsPage = () => {
                             <div className="p-6 flex-grow">
                                 <div className="flex justify-between items-start mb-3">
                                     <h3 className="text-xl font-bold text-white">{project.title}</h3>
-                                    <span className="text-xs bg-gray-800 text-purple-400 px-3 py-1 rounded-full capitalize">
+                                    <span className="text-xs md:text-sm border border-purple-400/50 text-purple-400 px-3 py-1 rounded-full capitalize whitespace-nowrap bg-purple-900/20 hover:bg-purple-900/30 transition-colors">
                                         {project.category}
                                     </span>
                                 </div>
@@ -171,7 +171,7 @@ const ProjectsPage = () => {
                                         {project.technologies.map((tech, index) => (
                                             <span
                                                 key={index}
-                                                className="text-xs bg-gray-800 text-gray-300 px-2 py-1 rounded-full"
+                                                className="text-xs md:text-sm border border-purple-400/50 text-gray-300 px-2 py-1 rounded-full whitespace-nowrap bg-purple-900/20 hover:bg-purple-900/30 transition-colors"
                                             >
                                                 {tech}
                                             </span>

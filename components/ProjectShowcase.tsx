@@ -110,7 +110,7 @@ const FeaturedProjects = () => {
             title: "NextGen Club Admin & Public Portal",
             slug: "nextgen-club-admin-portal",
             description: "A fully responsive and scalable web app built for the NextGen Innovator Club to streamline operations and boost student engagement. It features a secure admin panel built with Node.js and Express, allowing admin users to manage events, members, and club resources efficiently.",
-            imageSrc: "/nextgen.png", // Add your project image here
+            imageSrc: "/nextgen.webp",
             technologies: [
                 "Next.js",
                 "Tailwind CSS",
@@ -124,11 +124,27 @@ const FeaturedProjects = () => {
             liveUrl: "https://next-gen-it-eight.vercel.app/", // Replace with your live URL
             category: "Full Stack Application"
         },
+       
+        {
+            title: "BrandStage - Event Booking Platform",
+            slug: "brandstage-event-booking",
+            description: "BrandStage is an all-in-one event booking platform that allows users to book events, rent event essentials, and reserve venues. Built using React with Zustand for state management to efficiently manage user sessions, event selections, and rental items.",
+                imageSrc: "/project3.webp",
+            technologies: [
+                "React",
+                "Zustand",
+                "Shadcn/ui",
+                "Tailwind CSS",
+                "Responsive Design"
+            ],
+            liveUrl: "https://brandstage.io/",
+            category: "Frontend Application"
+        },
         {
             title: "UrbanAura – E-commerce app with admin panel",
             slug: "urbanaura-ecommerce-ui",
             description: "UrbanAura is a sleek, responsive e-commerce platform featuring dynamic product listings and category-based filtering. Built with React, Tailwind CSS, and ShadCN/UI, the frontend offers a seamless user experience. Data is fetched from the backend through a REST API, with TanStack Query for data fetching and Zustand for state management.",
-            imageSrc: "/project2.jpg", // Add your project image here
+            imageSrc: "/project2.webp",
             technologies: [
                 "React",
                 "TanStack Query",
@@ -139,21 +155,6 @@ const FeaturedProjects = () => {
                 "Drizzle ORM"
             ],
             liveUrl: "https://urbanauranp.vercel.app",
-            category: "Frontend Application"
-        },
-        {
-            title: "BrandStage - Event Booking Platform",
-            slug: "brandstage-event-booking",
-            description: "BrandStage is an all-in-one event booking platform that allows users to book events, rent event essentials, and reserve venues. Built using React with Zustand for state management to efficiently manage user sessions, event selections, and rental items.",
-            imageSrc: "/project3.jpg",
-            technologies: [
-                "React",
-                "Zustand",
-                "Shadcn/ui",
-                "Tailwind CSS",
-                "Responsive Design"
-            ],
-            liveUrl: "https://brandstage.io/", // changed Live URL
             category: "Frontend Application"
         }
     ];

@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/og-home.png",
+        url: "/og-home.webp",
         width: 1200,
         height: 630,
         alt: "Bimal Pandey - Full Stack Developer Nepal - Homepage",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
   twitter: {
     title: "Bimal Pandey - Expert Full Stack Developer Nepal",
     description: "Professional Full Stack Developer creating modern web applications with React, Next.js, Node.js",
-    images: ["/twitter-home.jpg"],
+    images: ["/twitter-home.webp"],
   },
   alternates: {
     canonical: "https://bimalpandey11.com.np",
@@ -253,7 +253,7 @@ export default function Home() {
             "@id": "https://bimalpandey11.com.np/#homepage-article",
             "headline": "Bimal Pandey - Expert Full Stack Developer Nepal",
             "description": "Professional portfolio and services of Bimal Pandey, a skilled Full Stack Developer from Nepal specializing in modern web technologies",
-            "image": "https://bimalpandey11.com.np/og-home.png",
+            "image": "https://bimalpandey11.com.np/og-home.webp",
             "author": {
               "@type": "Person",
               "name": "Bimal Pandey",

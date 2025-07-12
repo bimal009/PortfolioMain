@@ -19,7 +19,7 @@ const AboutPage = () => {
         "jobTitle": "Full Stack Developer",
         "description": pageDescription,
         "url": canonicalUrl,
-        "image": "https://bimalpandey.com.np/profile.jpg", // Replace with your actual domain
+        "image": "https://bimalpandey.com.np/profile.webp",
         "email": "pandeybimal616@gmail.com",
         "worksFor": {
             "@type": "Organization",
@@ -147,7 +147,7 @@ const AboutPage = () => {
                 <meta property="og:url" content={canonicalUrl} />
                 <meta property="og:title" content={pageTitle} />
                 <meta property="og:description" content={pageDescription} />
-                <meta property="og:image" content="https://bimalpandey.com.np/profile.jpg" />
+                <meta property="og:image" content="https://bimalpandey.com.np/profile.webp" />
                 <meta property="og:site_name" content="Bimal Pandey Portfolio" />
                 <meta property="profile:first_name" content="Bimal" />
                 <meta property="profile:last_name" content="Pandey" />
@@ -157,7 +157,7 @@ const AboutPage = () => {
                 <meta property="twitter:url" content={canonicalUrl} />
                 <meta property="twitter:title" content={pageTitle} />
                 <meta property="twitter:description" content={pageDescription} />
-                <meta property="twitter:image" content="https://bimalpandey.com.np/profile.jpg" />
+                <meta property="twitter:image" content="https://bimalpandey.com.np/profile.webp" />
                 <meta property="twitter:creator" content="@CodeWithBun" />
 
                 {/* Structured Data */}
@@ -199,7 +199,7 @@ const AboutPage = () => {
                                     <div className="project-card p-2 overflow-hidden rounded-lg border border-white/10 hover:border-purple-500/40 transition-all duration-300">
                                         <div className="relative w-16 h-16 rounded-md overflow-hidden">
                                             <Image
-                                                src="/profile.jpg"
+                                                src="/profile.webp"
                                                 alt="Bimal Pandey - Full Stack Developer Professional Photo"
                                                 fill
                                                 sizes="(max-width: 768px) 64px, 64px"
@@ -302,7 +302,7 @@ const AboutPage = () => {
                                             {skillsData.frontend.map((skill, index) => (
                                                 <span
                                                     key={index}
-                                                    className="text-sm bg-gray-800 text-gray-300 px-3 py-1 rounded-full hover:bg-gray-700 transition-colors"
+                                                    className="text-xs md:text-sm border border-purple-400/50 text-gray-300 px-3 py-1 rounded-full whitespace-nowrap bg-purple-900/20 hover:bg-purple-900/30 transition-colors"
                                                     itemProp="knowsAbout"
                                                     title={`${skill.name} - ${skill.level} level, ${skill.years} experience`}
                                                 >
@@ -317,7 +317,7 @@ const AboutPage = () => {
                                             {skillsData.backend.map((skill, index) => (
                                                 <span
                                                     key={index}
-                                                    className="text-sm bg-gray-800 text-gray-300 px-3 py-1 rounded-full hover:bg-gray-700 transition-colors"
+                                                    className="text-xs md:text-sm border border-purple-400/50 text-gray-300 px-3 py-1 rounded-full whitespace-nowrap bg-purple-900/20 hover:bg-purple-900/30 transition-colors"
                                                     itemProp="knowsAbout"
                                                     title={`${skill.name} - ${skill.level} level, ${skill.years} experience`}
                                                 >
@@ -351,7 +351,7 @@ const AboutPage = () => {
                                                     <p className="sr-only" itemProp="description">{project.description}</p>
                                                 </div>
                                                 <span
-                                                    className="text-sm bg-gray-800 text-gray-300 px-3 py-1 rounded-full"
+                                                    className="text-xs md:text-sm border border-purple-400/50 text-gray-300 px-3 py-1 rounded-full whitespace-nowrap bg-purple-900/20 hover:bg-purple-900/30 transition-colors"
                                                     itemProp="keywords"
                                                 >
                                                     {project.technologies}
@@ -387,7 +387,7 @@ const AboutPage = () => {
                                                 <h4 className="text-lg font-semibold text-white" itemProp="name">Bachelor in Computer Applications (BCA)</h4>
                                                 <p className="text-purple-400" itemProp="sourceOrganization">Kalika Campus</p>
                                             </div>
-                                            <time className="text-sm bg-gray-800 text-gray-300 px-3 py-1 rounded-full" itemProp="dateCreated">2024 - Present</time>
+                                            <time className="text-xs md:text-sm border border-purple-400/50 text-gray-300 px-3 py-1 rounded-full whitespace-nowrap bg-purple-900/20 hover:bg-purple-900/30 transition-colors" itemProp="dateCreated">2024 - Present</time>
                                         </div>
                                     </div>
                                     <div
@@ -400,7 +400,7 @@ const AboutPage = () => {
                                                 <h4 className="text-lg font-semibold text-white" itemProp="name">Higher Secondary Education (+2)</h4>
                                                 <p className="text-purple-400" itemProp="sourceOrganization">Kanti Secondary School</p>
                                             </div>
-                                            <time className="text-sm bg-gray-800 text-gray-300 px-3 py-1 rounded-full" itemProp="dateCreated">2022 - 2023</time>
+                                            <time className="text-xs md:text-sm border border-purple-400/50 text-gray-300 px-3 py-1 rounded-full whitespace-nowrap bg-purple-900/20 hover:bg-purple-900/30 transition-colors" itemProp="dateCreated">2022 - 2023</time>
                                         </div>
                                     </div>
                                 </div>

@@ -111,18 +111,18 @@ export const metadata: Metadata = {
     siteName: "Bimal Pandey - Full Stack Developer Portfolio",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image.webp",
         width: 1200,
         height: 630,
         alt: "Bimal Pandey - Full Stack Developer Nepal - React Next.js Node.js Expert",
-        type: "image/png"
+        type: "image/webp"
       },
       {
-        url: "/profile-photo.jpg",
+        url: "/profile-photo.webp",
         width: 800,
         height: 800,
         alt: "Bimal Pandey Profile Photo - Full Stack Developer",
-        type: "image/jpeg"
+        type: "image/webp"
       }
     ],
   },
@@ -134,7 +134,7 @@ export const metadata: Metadata = {
     description: "Professional Full Stack Developer specializing in React, Next.js, Node.js. Building modern web applications and scalable solutions.",
     images: [
       {
-        url: "/twitter-card.jpg",
+        url: "/twitter-card.webp",
         alt: "Bimal Pandey - Full Stack Developer Nepal",
         width: 1200,
         height: 630,
@@ -173,10 +173,10 @@ export const metadata: Metadata = {
     icon: [
       { url: "/logo.svg", sizes: "any" },
       { url: "/logo.svg", type: "image/svg+xml" },
-      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+      { url: "/apple-touch-icon.webp", sizes: "180x180", type: "image/webp" },
     ],
     apple: [
-      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+      { url: "/apple-touch-icon.webp", sizes: "180x180", type: "image/webp" },
     ],
     other: [
       {
@@ -267,7 +267,7 @@ export default function RootLayout({
               "url": "${baseUrl}",
               "image": {
                 "@type": "ImageObject",
-                "url": "${baseUrl}/profile-photo.jpg",
+                "url": "${baseUrl}/profile-photo.webp",
                 "width": 800,
                 "height": 800
               },
