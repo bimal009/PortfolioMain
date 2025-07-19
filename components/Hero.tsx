@@ -102,7 +102,7 @@ const Hero = () => {
                     <div className="max-w-3xl mx-auto">
                         <div className="text-center">
                             <p className="text-purple-400 text-lg mb-2 font-medium">
-                                Hello, I'm <span className="font-semibold" itemProp="name">{authorName}</span>
+                               <span className="font-semibold" itemProp="name">{authorName}</span>
                             </p>
 
                             <h1
