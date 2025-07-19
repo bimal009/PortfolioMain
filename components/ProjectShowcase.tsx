@@ -121,15 +121,14 @@ const FeaturedProjects = () => {
                 "MongoDB",
                 "JWT Auth"
             ],
-            liveUrl: "https://next-gen-it-eight.vercel.app/", // Replace with your live URL
+            liveUrl: "https://next-gen-it-eight.vercel.app/",
             category: "Full Stack Application"
         },
-       
         {
             title: "BrandStage - Event Booking Platform",
             slug: "brandstage-event-booking",
             description: "BrandStage is an all-in-one event booking platform that allows users to book events, rent event essentials, and reserve venues. Built using React with Zustand for state management to efficiently manage user sessions, event selections, and rental items.",
-                imageSrc: "/project3.webp",
+            imageSrc: "/project3.webp",
             technologies: [
                 "React",
                 "Zustand",
@@ -139,6 +138,23 @@ const FeaturedProjects = () => {
             ],
             liveUrl: "https://brandstage.io/",
             category: "Frontend Application"
+        },
+        {
+            title: "Auto Twitter Bot with Gemini AI",
+            slug: "auto-twitter-gemini-bot",
+            description: "An automated Twitter bot that generates and posts trending tech-related tweets using Google Gemini for content generation and Twitter API for publishing. Built with Next.js and Tailwind CSS, the bot fetches trending hashtags, crafts engaging tweets, and auto-posts them using scheduled triggers or API routes.",
+            imageSrc: "/twitter2.jpg",
+            technologies: [
+                "Next.js",
+                "Tailwind CSS",
+                "Google Gemini API",
+                "Twitter API",
+                "Express.js",
+                "Serverless Functions",
+                "REST API"
+            ],
+            liveUrl: "https://www.linkedin.com/feed/update/urn:li:activity:7332789167132737537/",
+            category: "AI & Automation"
         },
         {
             title: "UrbanAura – E-commerce app with admin panel",
@@ -156,8 +172,10 @@ const FeaturedProjects = () => {
             ],
             liveUrl: "https://urbanauranp.vercel.app",
             category: "Frontend Application"
-        }
+        },
+        
     ];
+    
 
     return (
         <section

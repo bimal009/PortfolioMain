@@ -91,7 +91,7 @@ const Navbar = () => {
       </a>
 
       <header
-        className={`fixed top-0 left-0 right-0 px-3 sm:px-6 lg:px-8 py-3 md:py-4 z-50 transition-all duration-300 ${scrolled ? "bg-purple-dark/95 shadow-lg backdrop-blur-sm" : "bg-purple-dark"
+        className={`fixed top-0 left-0 right-0 px-3 sm:px-6 lg:px-8 py-3 md:py-4 z-50 transition-all duration-300 ${scrolled ? "bg-[#13091F]" : "bg-purple-dark"
           }`}
         role="banner"
         itemScope
