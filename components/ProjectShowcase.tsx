@@ -109,7 +109,7 @@ const FeaturedProjects = () => {
         {
             title: "NextGen Club Admin & Public Portal",
             slug: "nextgen-club-admin-portal",
-            description: "A fully responsive and scalable web app built for the NextGen Innovator Club to streamline operations and boost student engagement. It features a secure admin panel built with Node.js and Express, allowing admin users to manage events, members, and club resources efficiently.",
+            description: "Developed a fully responsive, scalable web app for NextGen Innovator Club to streamline operations and boost student engagement. Built a secure admin panel with Node.js and Express for managing events, members, and resources. Implemented JWT authentication, role-based access, Zustand state management, and Express APIs with Mongoose/MongoDB CRUD. Integrated Tanstack Query, reducing latency by 30%, and used Tailwind CSS for a responsive UI. Added an AI chatbot powered by Google Gemini for interactive support.",
             imageSrc: "/nextgen.webp",
             technologies: [
                 "Next.js",
@@ -121,7 +121,7 @@ const FeaturedProjects = () => {
                 "MongoDB",
                 "JWT Auth"
             ],
-            liveUrl: "https://next-gen-it-eight.vercel.app/",
+            liveUrl: "https://nextgenkalika.vercel.app/",
             category: "Full Stack Application"
         },
         {

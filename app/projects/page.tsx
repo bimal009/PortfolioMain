@@ -73,7 +73,7 @@ const ProjectsPage = () => {
             categoryIcon: Briefcase,
             projectIcon: Users,
             image: "/nextgen.webp",
-            description: "A comprehensive club website featuring a quiz platform with subject-wise MCQs and real-time scoring.",
+            description: "Developed a fully responsive, scalable web app for NextGen Innovator Club to streamline operations and boost student engagement. Built a secure admin panel with Node.js and Express for managing events, members, and resources. Implemented JWT authentication, role-based access, Zustand state management, and Express APIs with Mongoose/MongoDB CRUD. Integrated Tanstack Query, reducing latency by 30%, and used Tailwind CSS for a responsive UI. Added an AI chatbot powered by Google Gemini for interactive support.",
             technologies: ["Next.js", "MongoDB", "Zustand", "JWT", "Express", "Mongoose"],
             features: [
                 { icon: Trophy, text: "Subject-wise quiz modules with real-time scoring" },
@@ -83,7 +83,7 @@ const ProjectsPage = () => {
                 { icon: Calendar, text: "Event calendar and announcements" },
                 { icon: Smartphone, text: "Responsive design" }
             ],
-            demo: "https://next-gen-it-eight.vercel.app/",
+            demo: "https://nextgenkalika.vercel.app/",
             date: "August 2024"
         },
         {
