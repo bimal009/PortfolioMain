@@ -19,10 +19,12 @@ const baseUrl = "https://bimalpandey11.com.np";
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "Bimal Pandey | Expert Full Stack Developer Nepal | React Next.js Node.js Specialist",
+    default:
+      "Bimal Pandey | Expert Full Stack Developer Nepal | React Next.js Node.js Specialist",
     template: "%s | Bimal Pandey - Full Stack Developer Nepal",
   },
-  description: "Bimal Pandey is a leading Full Stack Developer from Nepal specializing in React, Next.js, Node.js, TypeScript, and modern web technologies. Expert in building scalable web applications, REST APIs, and responsive websites. Professional software engineer with proven track record in JavaScript development.",
+  description:
+    "Bimal Pandey is a leading Full Stack Developer from Nepal specializing in React, Next.js, Node.js, TypeScript, and modern web technologies. Expert in building scalable web applications, REST APIs, and responsive websites. Professional software engineer with proven track record in JavaScript development.",
   keywords: [
     // Primary target keywords
     "Bimal",
@@ -88,7 +90,7 @@ export const metadata: Metadata = {
     "Scrum Master",
     "Code Review",
     "Testing",
-    "CI/CD"
+    "CI/CD",
   ],
   authors: [{ name: "Bimal Pandey", url: baseUrl }],
   creator: "Bimal Pandey",
@@ -107,7 +109,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: baseUrl,
     title: "Bimal Pandey - Expert Full Stack Developer from Nepal",
-    description: "Professional Full Stack Developer Bimal Pandey specializes in React, Next.js, Node.js. Expert in building modern web applications, APIs, and scalable solutions. Based in Nepal, serving global clients.",
+    description:
+      "Professional Full Stack Developer Bimal Pandey specializes in React, Next.js, Node.js. Expert in building modern web applications, APIs, and scalable solutions. Based in Nepal, serving global clients.",
     siteName: "Bimal Pandey - Full Stack Developer Portfolio",
     images: [
       {
@@ -115,15 +118,15 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt: "Bimal Pandey - Full Stack Developer Nepal - React Next.js Node.js Expert",
-        type: "image/webp"
+        type: "image/webp",
       },
       {
         url: "/profile-photo.webp",
         width: 800,
         height: 800,
         alt: "Bimal Pandey Profile Photo - Full Stack Developer",
-        type: "image/webp"
-      }
+        type: "image/webp",
+      },
     ],
   },
   twitter: {
@@ -131,21 +134,22 @@ export const metadata: Metadata = {
     site: "@CodeWithBun",
     creator: "@CodeWithBun",
     title: "Bimal Pandey - Expert Full Stack Developer Nepal",
-    description: "Professional Full Stack Developer specializing in React, Next.js, Node.js. Building modern web applications and scalable solutions.",
+    description:
+      "Professional Full Stack Developer specializing in React, Next.js, Node.js. Building modern web applications and scalable solutions.",
     images: [
       {
         url: "/twitter-card.webp",
         alt: "Bimal Pandey - Full Stack Developer Nepal",
         width: 1200,
         height: 630,
-      }
+      },
     ],
   },
   alternates: {
     canonical: baseUrl,
     languages: {
-      'en': baseUrl,
-      'ne': `${baseUrl}/ne`, // If you plan to add Nepali version
+      en: baseUrl,
+      ne: `${baseUrl}/ne`, // If you plan to add Nepali version
     },
   },
   robots: {
@@ -227,7 +231,10 @@ export default function RootLayout({
         <meta name="url" content={baseUrl} />
         <meta name="identifier-URL" content={baseUrl} />
         <meta name="directory" content="submission" />
-        <meta name="category" content="Technology, Web Development, Programming" />
+        <meta
+          name="category"
+          content="Technology, Web Development, Programming"
+        />
         <meta name="coverage" content="Worldwide" />
         <meta name="distribution" content="Global" />
         <meta name="rating" content="General" />
@@ -235,6 +242,21 @@ export default function RootLayout({
         <meta name="target" content="all" />
         <meta name="HandheldFriendly" content="True" />
         <meta name="MobileOptimized" content="320" />
+        <link
+          rel="icon"
+          type="image/png"
+          href="/favicon-96x96.png"
+          sizes="96x96"
+        />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/apple-touch-icon.png"
+        />
+        <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+        <link rel="manifest" href="/site.webmanifest" />
 
         {/* Geo-location meta tags */}
         <meta name="geo.region" content="NP" />
@@ -243,7 +265,11 @@ export default function RootLayout({
 
         {/* Preconnect to external domains for performance */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
         <link rel="preconnect" href="https://www.google-analytics.com" />
 
         {/* DNS prefetch for social platforms */}
@@ -256,7 +282,11 @@ export default function RootLayout({
         <main className="min-h-screen">{children}</main>
 
         {/* Enhanced structured data for Person */}
-        <Script id="schema-person" type="application/ld+json" strategy="afterInteractive">
+        <Script
+          id="schema-person"
+          type="application/ld+json"
+          strategy="afterInteractive"
+        >
           {`
             {
               "@context": "https://schema.org",
@@ -307,7 +337,11 @@ export default function RootLayout({
         </Script>
 
         {/* Enhanced Website Schema */}
-        <Script id="schema-website" type="application/ld+json" strategy="afterInteractive">
+        <Script
+          id="schema-website"
+          type="application/ld+json"
+          strategy="afterInteractive"
+        >
           {`
             {
               "@context": "https://schema.org",
@@ -340,7 +374,11 @@ export default function RootLayout({
         </Script>
 
         {/* Professional Service Schema */}
-        <Script id="schema-professional-service" type="application/ld+json" strategy="afterInteractive">
+        <Script
+          id="schema-professional-service"
+          type="application/ld+json"
+          strategy="afterInteractive"
+        >
           {`
             {
               "@context": "https://schema.org",
@@ -388,7 +426,11 @@ export default function RootLayout({
         </Script>
 
         {/* Breadcrumb Schema (add to specific pages) */}
-        <Script id="schema-breadcrumb" type="application/ld+json" strategy="afterInteractive">
+        <Script
+          id="schema-breadcrumb"
+          type="application/ld+json"
+          strategy="afterInteractive"
+        >
           {`
             {
               "@context": "https://schema.org",
