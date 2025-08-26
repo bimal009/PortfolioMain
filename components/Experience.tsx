@@ -1,80 +1,66 @@
 import React from "react";
-import Image from "next/image";
 
 const WorkCard = ({
-    title,
-    imgSrc
+  title,
+  company,
+  duration,
+  description,
 }: {
-    title: string;
-    imgSrc: string;
+  title: string;
+  company: string;
+  duration: string;
+  description: string;
 }) => {
-    return (
-        <div className="project-card p-4 h-full flex flex-col">
-            <div className="relative w-full aspect-video mb-4 overflow-hidden rounded-md">
-                <Image
-                    src={imgSrc}
-                    alt={title}
-                    fill
-                    sizes="(max-width: 768px) 100vw, 50vw"
-                    className="object-cover"
-                />
-            </div>
+  return (
+    <div className="project-card p-6 h-full flex flex-col bg-gray-900/50 border border-gray-800 rounded-lg">
+      <div className="mb-4">
+        <h3 className="text-lg font-semibold text-white mb-1">{title}</h3>
+        <p className="text-purple-400 text-sm font-medium mb-2">{company}</p>
+        <p className="text-gray-400 text-xs">{duration}</p>
+      </div>
 
-            <h3 className="text-sm text-gray-300 mb-2">
-                {title}
-            </h3>
+      <p className="text-gray-300 text-sm mb-4 flex-grow">{description}</p>
 
-            <div className="mt-auto">
-                <button className="text-xs border border-white/10 rounded px-3 py-1 hover:bg-white/5 transition-colors">
-                    LEARN MORE
-                </button>
-            </div>
-        </div>
-    );
+      <div className="mt-auto">
+        <button className="text-xs border border-white/10 rounded px-3 py-1 hover:bg-white/5 transition-colors">
+          LEARN MORE
+        </button>
+      </div>
+    </div>
+  );
 };
 
 const WorkExperience = () => {
-    const workItems = [
-        { id: 1, title: "CIB on the Mobile", imgSrc: "/work1.webp" },
-        { id: 2, title: "CIB on the Mobile", imgSrc: "/work2.webp" },
-        { id: 3, title: "CIB on the Mobile", imgSrc: "/work3.webp" },
-        { id: 4, title: "CIB on the Mobile", imgSrc: "/work4.webp" },
-    ];
+  const workItems = [
+    {
+      id: 1,
+      title: "Full Stack Developer Intern",
+      company: "Synthbit Group PVT",
+      duration: "July 2025 - Present",
+      description:
+        "Developing full-stack applications using modern web technologies. Working on both frontend and backend development, contributing to various projects and gaining hands-on experience in software development lifecycle.",
+    },
+  ];
 
-    return (
-        <section className="py-16 px-4 sm:px-6 md:px-12">
-            <div className="max-w-6xl mx-auto">
-                <h2 className="text-2xl font-bold mb-12">Work Experience</h2>
+  return (
+    <section className="py-16 px-4 sm:px-6 md:px-12">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-2xl font-bold mb-12">Work Experience</h2>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {workItems.map((item) => (
-                        <WorkCard key={item.id} title={item.title} imgSrc={item.imgSrc} />
-                    ))}
-                </div>
-
-                <div className="mt-16 text-center">
-                    <p className="text-xl font-medium mb-2">
-                        I'm currently looking to join a <span className="text-purple-400">cross-functional</span> team
-                    </p>
-                    <p className="text-gray-400 text-sm max-w-xl mx-auto">
-                        that values improving people's lives through accessible design
-                    </p>
-
-                    {/* Tech stack logos */}
-                    <div className="mt-8 flex flex-wrap justify-center gap-3">
-                        {[...Array(10)].map((_, index) => (
-                            <div
-                                key={index}
-                                className="tech-item w-10 h-10 flex items-center justify-center"
-                            >
-                                <div className="w-5 h-5 rounded-full bg-purple-500/50"></div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </div>
-        </section>
-    );
+        <div className="grid grid-cols-1  gap-6">
+          {workItems.map((item) => (
+            <WorkCard
+              key={item.id}
+              title={item.title}
+              company={item.company}
+              duration={item.duration}
+              description={item.description}
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default WorkExperience;

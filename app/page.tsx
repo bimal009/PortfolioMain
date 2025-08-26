@@ -6,11 +6,14 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import Skills from "@/components/Skills";
 import Script from "next/script";
+import WorkExperience from "@/components/Experience";
 
 // Enhanced metadata specifically for homepage
 export const metadata: Metadata = {
-  title: "Bimal Pandey | Expert Full Stack Developer Nepal | React Next.js Node.js Specialist",
-  description: "Bimal Pandey is a professional Full Stack Developer from Nepal with expertise in React, Next.js, Node.js, TypeScript, MongoDB, and AWS. Specialized in building scalable web applications, REST APIs, and modern responsive websites. Available for freelance projects worldwide.",
+  title:
+    "Bimal Pandey | Expert Full Stack Developer Nepal | React Next.js Node.js Specialist",
+  description:
+    "Bimal Pandey is a professional Full Stack Developer from Nepal with expertise in React, Next.js, Node.js, TypeScript, MongoDB, and AWS. Specialized in building scalable web applications, REST APIs, and modern responsive websites. Available for freelance projects worldwide.",
   keywords: [
     "Bimal Pandey",
     "Bimal Pandey Developer",
@@ -42,11 +45,12 @@ export const metadata: Metadata = {
     "Modern Web Technologies",
     "Scalable Applications",
     "Performance Optimization",
-    "SEO Expert Developer"
+    "SEO Expert Developer",
   ],
   openGraph: {
     title: "Bimal Pandey - Expert Full Stack Developer from Nepal",
-    description: "Professional Full Stack Developer Bimal Pandey creates modern web applications using React, Next.js, Node.js. Serving clients worldwide from Nepal.",
+    description:
+      "Professional Full Stack Developer Bimal Pandey creates modern web applications using React, Next.js, Node.js. Serving clients worldwide from Nepal.",
     url: "https://bimalpandey11.com.np",
     type: "website",
     images: [
@@ -55,12 +59,13 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt: "Bimal Pandey - Full Stack Developer Nepal - Homepage",
-      }
+      },
     ],
   },
   twitter: {
     title: "Bimal Pandey - Expert Full Stack Developer Nepal",
-    description: "Professional Full Stack Developer creating modern web applications with React, Next.js, Node.js",
+    description:
+      "Professional Full Stack Developer creating modern web applications with React, Next.js, Node.js",
     images: ["/twitter-home.webp"],
   },
   alternates: {
@@ -74,12 +79,19 @@ export default function Home() {
       {/* SEO-optimized semantic HTML structure */}
       <main role="main" itemScope itemType="https://schema.org/Person">
         {/* Hidden structured data for better indexing */}
-        <div style={{ display: 'none' }}>
+        <div style={{ display: "none" }}>
           <h1 itemProp="name">Bimal Pandey</h1>
           <span itemProp="jobTitle">Full Stack Developer</span>
-          <span itemProp="description">Expert Full Stack Developer specializing in React, Next.js, Node.js, and modern web technologies</span>
+          <span itemProp="description">
+            Expert Full Stack Developer specializing in React, Next.js, Node.js,
+            and modern web technologies
+          </span>
           <span itemProp="nationality">Nepali</span>
-          <div itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
+          <div
+            itemProp="address"
+            itemScope
+            itemType="https://schema.org/PostalAddress"
+          >
             <span itemProp="addressCountry">Nepal</span>
             <span itemProp="addressLocality">Kathmandu</span>
           </div>
@@ -108,13 +120,13 @@ export default function Home() {
         </section>
 
         {/* Work Experience Section (commented out but SEO ready) */}
-        {/* <section 
+        <section
           aria-label="Work experience of Bimal Pandey"
-          itemScope 
+          itemScope
           itemType="https://schema.org/WorkHistory"
         >
           <WorkExperience />
-        </section> */}
+        </section>
 
         {/* Featured Projects Section */}
         <section
@@ -122,9 +134,12 @@ export default function Home() {
           itemScope
           itemType="https://schema.org/CreativeWork"
         >
-          <header style={{ display: 'none' }}>
+          <header style={{ display: "none" }}>
             <h2>Featured Projects by Bimal Pandey - Full Stack Developer</h2>
-            <p>Showcase of web applications, React projects, and Node.js applications built by Bimal Pandey</p>
+            <p>
+              Showcase of web applications, React projects, and Node.js
+              applications built by Bimal Pandey
+            </p>
           </header>
           <FeaturedProjects />
         </section>
@@ -135,9 +150,12 @@ export default function Home() {
           itemScope
           itemType="https://schema.org/SkillSet"
         >
-          <header style={{ display: 'none' }}>
+          <header style={{ display: "none" }}>
             <h2>Bimal Pandey's Technical Skills</h2>
-            <p>Full Stack Development skills including React, Next.js, Node.js, TypeScript, and modern web technologies</p>
+            <p>
+              Full Stack Development skills including React, Next.js, Node.js,
+              TypeScript, and modern web technologies
+            </p>
           </header>
           <Skills />
         </section>
@@ -148,9 +166,12 @@ export default function Home() {
           itemScope
           itemType="https://schema.org/ContactPage"
         >
-          <header style={{ display: 'none' }}>
+          <header style={{ display: "none" }}>
             <h2>Contact Bimal Pandey - Full Stack Developer</h2>
-            <p>Get in touch with Bimal Pandey for web development projects, React applications, and custom software solutions</p>
+            <p>
+              Get in touch with Bimal Pandey for web development projects, React
+              applications, and custom software solutions
+            </p>
           </header>
           <Contact />
         </section>
@@ -160,7 +181,11 @@ export default function Home() {
       <Footer />
 
       {/* Enhanced FAQ Schema for common searches */}
-      <Script id="faq-schema" type="application/ld+json" strategy="afterInteractive">
+      <Script
+        id="faq-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+      >
         {`
           {
             "@context": "https://schema.org",
@@ -212,7 +237,11 @@ export default function Home() {
       </Script>
 
       {/* Portfolio/Creative Work Schema */}
-      <Script id="creative-work-schema" type="application/ld+json" strategy="afterInteractive">
+      <Script
+        id="creative-work-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+      >
         {`
           {
             "@context": "https://schema.org",
@@ -238,14 +267,18 @@ export default function Home() {
             ],
             "keywords": "Bimal Pandey, Full Stack Developer, React Projects, Next.js Applications, Node.js Development, Web Development Portfolio",
             "inLanguage": "en-US",
-            "dateModified": "${new Date().toISOString().split('T')[0]}",
+            "dateModified": "${new Date().toISOString().split("T")[0]}",
             "url": "https://bimalpandey11.com.np"
           }
         `}
       </Script>
 
       {/* Article Schema for better content understanding */}
-      <Script id="article-schema" type="application/ld+json" strategy="afterInteractive">
+      <Script
+        id="article-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+      >
         {`
           {
             "@context": "https://schema.org",
@@ -268,7 +301,7 @@ export default function Home() {
               }
             },
             "datePublished": "2024-01-01",
-            "dateModified": "${new Date().toISOString().split('T')[0]}",
+            "dateModified": "${new Date().toISOString().split("T")[0]}",
             "mainEntityOfPage": "https://bimalpandey11.com.np",
             "articleSection": "Technology",
             "keywords": "Bimal Pandey, Full Stack Developer Nepal, React Developer, Next.js Expert, Node.js Specialist",
@@ -278,7 +311,11 @@ export default function Home() {
       </Script>
 
       {/* Local Business Schema (if offering services locally) */}
-      <Script id="local-business-schema" type="application/ld+json" strategy="afterInteractive">
+      <Script
+        id="local-business-schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+      >
         {`
           {
             "@context": "https://schema.org",
