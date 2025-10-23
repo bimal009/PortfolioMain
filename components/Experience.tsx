@@ -34,7 +34,7 @@ const WorkExperience = () => {
   const workItems = [
     {
       id: 1,
-      title: "Full Stack Developer Intern",
+      title: "Junior Full Stack Developer",
       company: "Synthbit Group PVT",
       duration: "July 2025 - Present",
       description:
